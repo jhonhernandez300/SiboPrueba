@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="examen.master.cs" Inherits="Sibo.Examen.Site.examen" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="css/site.css" rel="stylesheet" />
+    <title>Sibo SuperMarket</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+       
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="Header">
+        <div class="Logo">
+            <img src="images/logo_white.png" width="100" />
+            <h1>Sibo SuperMarket</h1>
+        </div>       
+        <div class="User">
+            <asp:LinkButton ID="lnkSalir" runat="server" OnClick="lnkSalir_Click">Salir</asp:LinkButton><br /><br /><br />
+            <b>Asesor:&nbsp;</b> <asp:Label ID="labNombreDeUsuario" runat="server" ></asp:Label>
+        </div>
+         <div>
+             <asp:Button ID="butVerFacturas" runat="server" Text="Ver Facturas" OnClick="butVerFacturas_Click" />
+        </div>
+    </div>
+    <div class="Container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,131 @@
+﻿html {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%; 
+}
+
+ body {
+    margin:0px;
+}
+
+form{
+    height:100%;
+}
+
+.Header {
+    background-color:#0057a4;
+    width:100%;
+    height:80px;
+}
+.Header .Logo{
+    float:left;
+    margin:10px;
+}
+
+.Header .Logo img{
+    display:inline-block;
+}
+
+
+.Header .Logo h1{
+    display:inline-block;
+    color:white;
+}
+
+
+.LogoLogin{
+    position:absolute;
+    left:50%;
+    margin-left:-11%;
+    padding-top:100px;
+    top:0px;
+}
+
+.LogoLogin img{
+    display:inline-block;
+}
+
+
+.LogoLogin h1{
+    display:inline-block;
+    color:#0057a4;
+}
+
+
+.Header .User{
+    float:right;
+    color:white;
+    margin:10px;
+    margin-top:0px;
+    text-align:right;
+}
+
+.Header .User a{
+    text-decoration:none;
+    color:white;
+    text-decoration:underline;
+}
+
+.Container{
+    height:80%;
+    width:100%;
+    position:absolute;
+}
+
+.Container .Form{
+    width:60%;
+    height:80%;
+    background-color:#d1d1d1;
+    border-radius:10px;
+    box-shadow: 2px 5px 10px #888888;
+    margin: auto;
+    margin-top:20px;
+    padding:20px;
+}
+
+.Container .Login{
+    width:30%;
+    background-color:#d1d1d1;
+    border-radius:10px;
+    box-shadow: 2px 5px 10px #888888;
+    margin: -4% 0 0 -15.8%;
+    padding:20px;
+    position:relative;
+    top:50%;
+    left:50%;
+    min-height:150px;
+}
+
+.Container .Login div {
+    width:100%;
+    margin:10px;
+}
+.Container .Login div div {
+    width:25%;
+    display:inline-block;
+    text-align:right;
+}
+
+.Container .Login div input[type=text] {
+    width:60%;
+    height:30px;
+    display:inline-block;
+    font-size:14pt;
+}
+
+.Container .Login div input[type=password] {
+    width:60%;
+    height:30px;
+    display:inline-block;
+    font-size:14pt;
+}
+
+.Container input[type=submit]{
+    background-color:#0057a4;
+    width:60%;
+    color:white;
+    height:40px;
+    font-size:14pt;
+    border-radius:7px;
+    box-shadow: 2px 5px 10px #888888;
+    border: none;
+}
