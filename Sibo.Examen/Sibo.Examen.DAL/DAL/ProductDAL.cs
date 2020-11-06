@@ -57,7 +57,7 @@ namespace Sibo.Examen.DAL
                 string connectionString = "Data Source=DESKTOP-APHO8VE\\SQLEXPRESS;Initial Catalog=SiboSupermarket1;Integrated Security=True;";
                 var con = new SqlConnection(connectionString);
 
-                string UpdateCommand = "spUpdateProduct";
+                string UpdateCommand = "spUpdateProduct2";
                 using (SqlConnection sqlConnectionCmdString = new SqlConnection(connectionString))
                 {
                     using (SqlCommand sqlRenameCommand = new SqlCommand(UpdateCommand, sqlConnectionCmdString))

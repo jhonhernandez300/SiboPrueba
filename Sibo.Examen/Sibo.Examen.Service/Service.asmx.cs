@@ -14,6 +14,7 @@ namespace Sibo.Examen.Service
     /// <summary>
     /// Summary description for Service
     /// </summary>
+    //[Serializable]
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]

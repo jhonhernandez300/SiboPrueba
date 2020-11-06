@@ -99,7 +99,28 @@
   <Function Name="spSaveInvoice2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ClientID" Type="int" Mode="In" />
     <Parameter Name="AdviserID" Type="int" Mode="In" />
+    <Parameter Name="LastID" Type="float" Mode="InOut" />
+  </Function>
+  <Function Name="spSaveInvoiceDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InvoiceID" Type="int" Mode="In" />
+    <Parameter Name="ProductID" Type="int" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="Discount" Type="decimal" Mode="In" />
+    <Parameter Name="LastID" Type="float" Mode="InOut" />
+  </Function>
+  <Function Name="spStoreTransaction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ClientID" Type="int" Mode="In" />
+    <Parameter Name="AdviserID" Type="int" Mode="In" />
     <Parameter Name="TheDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductID" Type="int" Mode="In" />
+    <Parameter Name="QuantityUsed" Type="int" Mode="In" />
+    <Parameter Name="PercentDiscount" Type="decimal" Mode="In" />
+    <Parameter Name="Discount" Type="money" Mode="In" />
+    <Parameter Name="Price" Type="money" Mode="In" />
+  </Function>
+  <Function Name="spUpdateProduct2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="ID" Type="int" Mode="In" />
   </Function>
   <EntityContainer Name="SiboSupermarket1Model1StoreContainer">
     <EntitySet Name="Adviser" EntityType="Self.Adviser" Schema="dbo" store:Type="Tables" />

@@ -17,7 +17,7 @@ namespace Sibo.Examen.DAL.Model2
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Adviser()
         {
-            this.Invoice = new HashSet<Invoice>();
+            this.Invoice = new List<Invoice>();
         }
     
         public int AdviserID { get; set; }
@@ -27,6 +27,6 @@ namespace Sibo.Examen.DAL.Model2
         public string Password { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Invoice> Invoice { get; set; }
+        public virtual List<Invoice> Invoice { get; set; }
     }
 }

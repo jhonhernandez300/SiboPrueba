@@ -55,5 +55,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <FunctionImportMapping FunctionImportName="spSaveInvoice2" FunctionName="SiboSupermarket1Model1.Store.spSaveInvoice2" />
+    <FunctionImportMapping FunctionImportName="spSaveInvoiceDetail" FunctionName="SiboSupermarket1Model1.Store.spSaveInvoiceDetail" />
+    <FunctionImportMapping FunctionImportName="spStoreTransaction" FunctionName="SiboSupermarket1Model1.Store.spStoreTransaction" />
+    <FunctionImportMapping FunctionImportName="spUpdateProduct2" FunctionName="SiboSupermarket1Model1.Store.spUpdateProduct2" />
   </EntityContainerMapping>
 </Mapping>

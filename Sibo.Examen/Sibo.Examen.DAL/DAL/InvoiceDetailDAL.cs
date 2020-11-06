@@ -44,9 +44,10 @@ namespace Sibo.Examen.DAL
                 cmd.Parameters.AddWithValue("@ProductID", invoiceDetail.ProductID);
                 cmd.Parameters.AddWithValue("@Quantity", invoiceDetail.Quantity);
                 cmd.Parameters.AddWithValue("@Discount", invoiceDetail.Discount);
+                cmd.Parameters.Add("@LastID", SqlDbType.Int).Direction = ParameterDirection.Output;
 
                 cmd.ExecuteNonQuery();
-                int modified = (int)cmd.ExecuteScalar();
+                int modified = Convert.ToInt32(cmd.Parameters["@LastID"].Value);
                 con.Close();                
                 return modified;
             }

@@ -129,7 +129,28 @@
     <FunctionImport Name="spSaveInvoice2">
       <Parameter Name="ClientID" Mode="In" Type="Int32" />
       <Parameter Name="AdviserID" Mode="In" Type="Int32" />
+      <Parameter Name="LastID" Mode="InOut" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="spSaveInvoiceDetail">
+      <Parameter Name="InvoiceID" Mode="In" Type="Int32" />
+      <Parameter Name="ProductID" Mode="In" Type="Int32" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="Discount" Mode="In" Type="Decimal" />
+      <Parameter Name="LastID" Mode="InOut" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="spStoreTransaction">
+      <Parameter Name="ClientID" Mode="In" Type="Int32" />
+      <Parameter Name="AdviserID" Mode="In" Type="Int32" />
       <Parameter Name="TheDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductID" Mode="In" Type="Int32" />
+      <Parameter Name="QuantityUsed" Mode="In" Type="Int32" />
+      <Parameter Name="PercentDiscount" Mode="In" Type="Decimal" />
+      <Parameter Name="Discount" Mode="In" Type="Decimal" />
+      <Parameter Name="Price" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="spUpdateProduct2">
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="ID" Mode="In" Type="Int32" />
     </FunctionImport>
   </EntityContainer>
 </Schema>
